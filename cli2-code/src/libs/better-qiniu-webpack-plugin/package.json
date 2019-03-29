@@ -1,0 +1,120 @@
+{
+  "_args": [
+    [
+      "better-qiniu-webpack-plugin@0.0.4",
+      "/Users/mokinzhao/work/LD/H5/code"
+    ]
+  ],
+  "_development": true,
+  "_from": "better-qiniu-webpack-plugin@0.0.4",
+  "_id": "better-qiniu-webpack-plugin@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-ucsnJtph6z2ofKYXqFMwMkE7b22SKSv2ZV84GfTgOhLtad7sTZdqAYaBy6XBiCmzlOntgNHYK/e7Nk0uV4xTPQ==",
+  "_location": "/better-qiniu-webpack-plugin",
+  "_phantomChildren": {
+    "arr-flatten": "1.1.0",
+    "assign-symbols": "1.0.0",
+    "aws-sign2": "0.7.0",
+    "aws4": "1.6.0",
+    "caseless": "0.12.0",
+    "cli-spinners": "1.1.0",
+    "color-convert": "1.9.1",
+    "combined-stream": "1.0.5",
+    "debug": "2.6.9",
+    "define-property": "2.0.2",
+    "escape-string-regexp": "1.0.5",
+    "extend": "3.0.1",
+    "forever-agent": "0.6.1",
+    "form-data": "2.3.1",
+    "fragment-cache": "0.2.1",
+    "har-validator": "5.0.3",
+    "http-signature": "1.2.0",
+    "is-buffer": "1.1.6",
+    "is-extendable": "0.1.1",
+    "is-plain-object": "2.0.4",
+    "is-typedarray": "1.0.0",
+    "isstream": "0.1.2",
+    "json-stringify-safe": "5.0.1",
+    "mime-types": "2.1.17",
+    "mimic-fn": "1.1.0",
+    "nanomatch": "1.2.9",
+    "oauth-sign": "0.8.2",
+    "object.pick": "1.3.0",
+    "performance-now": "2.1.0",
+    "posix-character-classes": "0.1.1",
+    "qs": "6.5.2",
+    "regex-not": "1.0.2",
+    "repeat-element": "1.1.2",
+    "repeat-string": "1.6.1",
+    "safe-buffer": "5.1.1",
+    "signal-exit": "3.0.2",
+    "snapdragon": "0.8.2",
+    "snapdragon-node": "2.1.1",
+    "split-string": "3.1.0",
+    "to-regex": "3.0.2",
+    "to-regex-range": "2.1.1",
+    "tough-cookie": "2.3.3",
+    "tunnel-agent": "0.6.0",
+    "uuid": "3.1.0",
+    "wcwidth": "1.0.1"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "better-qiniu-webpack-plugin@0.0.4",
+    "name": "better-qiniu-webpack-plugin",
+    "escapedName": "better-qiniu-webpack-plugin",
+    "rawSpec": "0.0.4",
+    "saveSpec": null,
+    "fetchSpec": "0.0.4"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/better-qiniu-webpack-plugin/-/better-qiniu-webpack-plugin-0.0.4.tgz",
+  "_spec": "0.0.4",
+  "_where": "/Users/mokinzhao/work/LD/H5/code",
+  "author": {
+    "name": "zzetao"
+  },
+  "bugs": {
+    "url": "https://github.com/zzetao/qiniu-webpack-plugin/issues"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "lodash.difference": "^4.5.0",
+    "map-limit": "^0.0.1",
+    "micromatch": "^3.1.10",
+    "ora": "^2.0.0",
+    "qiniu": "^7.1.3",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "revalidator": "^0.3.1"
+  },
+  "description": "Webpack 编译后的文件上传到 七牛云存储",
+  "devDependencies": {
+    "ava": "^0.25.0"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "files": [
+    "src"
+  ],
+  "homepage": "https://github.com/zzetao/qiniu-webpack-plugin#readme",
+  "keywords": [
+    "webpack",
+    "qiniu"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "better-qiniu-webpack-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzetao/qiniu-webpack-plugin.git"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "version": "0.0.4"
+}

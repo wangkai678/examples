@@ -1,0 +1,171 @@
+$blue: #3190e8;
+$bc: #e4e4e4;
+$fc: #fff;
+//手动px转rem
+@function px2rem ($pxs, $base: 64px){
+  $result: '';
+  @each $px in $pxs {
+    $rem: $px;
+    @if $result != '' {
+      $result : $result + ' ';
+    }
+    @if type_of($px) == number {
+      $rem : ($px / $base) * 1rem;
+    }
+    $result : $result + $rem;
+  }
+  @return unquote($result);
+}
+
+//以750为参考
+@function toRem ($pxs){
+  @return px2rem($pxs,75px)
+}
+
+// 背景图片地址和大小
+@mixin bis($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+//定位全屏
+@mixin allcover{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+//定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+@mixin ct {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//定位左右居中
+@mixin cl {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//宽高
+@mixin wh($width, $height){
+  width: $width;
+  height: $height;
+}
+
+//字体大小，颜色
+@mixin sc($size, $color){
+  font-size: $size;
+  color: $color;
+}
+
+//flex 垂直布局
+@mixin fdc{
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin bgColor{
+  background: linear-gradient(0deg, rgba(146,0,249,0.99) 0%, rgba(146,0,249,0.99) 44%, rgba(127, 0, 255, 0.99) 93%, rgba(137, 0, 252, 0.99) 97%, rgba(146, 0, 249, 0.99) 100%);
+}
+
+//-----flex居中布局-----
+//横向居中
+@mixin row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+//横向垂直居中
+@mixin row-start{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin row-end{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+//横向环绕
+@mixin row-around{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+//横向非环绕
+@mixin row-between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//纵向居中
+@mixin column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+//纵向顶部对齐居中
+@mixin column-start{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin column-left-start{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+//纵向底部对齐居中
+@mixin column-end{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+//纵向左对齐
+@mixin column-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+//自定义
+@mixin self ($a,$b,$c){
+  display: flex;
+  flex-direction: $a;
+  justify-content: $b;
+  align-items: $c;
+}
+
+
+
+

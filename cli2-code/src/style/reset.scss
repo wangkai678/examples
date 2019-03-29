@@ -1,0 +1,256 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+body,html{
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff; opacity:1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;opacity:1;
+}
+
+input:-ms-input-placeholder{
+  color: #fff;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+  color: #fff;opacity:1;
+}
+
+input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/*mark*/
+.wa-mark{
+  border-radius: 20px;
+  padding: 2px 6px;
+  font-size: 12px;
+
+}
+.wa-item .wa-mark{
+  margin-top: -2px;
+}
+/*grid*/
+.wa-grid{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wa-row{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box
+}
+.wa-col{
+  flex:1;
+  display: block;
+  box-sizing: border-box;
+}
+.wa-col-5{
+  flex: 0 0 5%;
+  max-width: 5%;
+  display: block;
+  box-sizing: border-box;
+}
+.wa-col-8{
+  flex: 0 0 8%;
+  max-width: 8%;
+  display: block;
+  box-sizing: border-box;
+}
+.wa-col-10{
+  flex: 0 0 10%;
+  max-width: 10%;
+  box-sizing: border-box;
+}
+.wa-col-15{
+  flex: 0 0 15%;
+  max-width: 15%;
+  box-sizing: border-box;
+}
+.wa-col-20{
+  flex: 0 0 20%;
+  max-width: 20%;
+  box-sizing: border-box;
+}
+.wa-col-25{
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+}
+.wa-col-30{
+  flex: 0 0 30%;
+  max-width: 30%;
+  box-sizing: border-box;
+}
+.wa-col-33{
+  flex: 0 0 33%;
+  max-width: 33%;
+  box-sizing: border-box;
+}
+.wa-col-35{
+  flex: 0 0 35%;
+  max-width: 35%;
+  box-sizing: border-box;
+}
+.wa-col-40{
+  flex: 0 0 40%;
+  max-width: 40%;
+  box-sizing: border-box;
+}
+.wa-col-45{
+  flex: 0 0 45%;
+  max-width: 45%;
+  box-sizing: border-box;
+}
+.wa-col-50{
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+.wa-col-55{
+  flex: 0 0 55%;
+  max-width: 55%;
+  box-sizing: border-box;
+}
+.wa-col-60{
+  flex: 0 0 60%;
+  max-width: 60%;
+  box-sizing: border-box;
+}
+.wa-col-65{
+  flex: 0 0 65%;
+  max-width: 65%;
+  box-sizing: border-box;
+}
+.wa-col-66{
+  flex: 0 0 66%;
+  max-width: 66%;
+  box-sizing: border-box;
+}
+.wa-col-70{
+  flex: 0 0 70%;
+  max-width: 70%;
+  box-sizing: border-box;
+}
+.wa-col-75{
+  flex: 0 0 75%;
+  max-width: 75%;
+  box-sizing: border-box;
+}
+.wa-col-80{
+  flex: 0 0 80%;
+  max-width: 80%;
+  box-sizing: border-box;
+}
+.wa-col-85{
+  flex: 0 0 85%;
+  max-width: 85%;
+  box-sizing: border-box;
+}
+.wa-col-90{
+  flex: 0 0 90%;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+/* 自定义 */
+.wa-col-11{
+  flex: 0 0 11%;
+  max-width: 11%;
+  box-sizing: border-box;
+}
+.wa-col-22{
+  flex: 0 0 22%;
+  max-width: 22%;
+  box-sizing: border-box;
+}
+.wa-col-100{
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.row-wrap{
+  flex-flow: row wrap;
+}
+.no-padding{
+  padding:0
+}
+.no-margin{
+  margin:0;
+}
+/* 垂直水平居中 */
+.wa-center{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.wa-wrap{
+  flex-wrap:wrap;
+}
+
+/* 垂直水平end */
+.wa-end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/* 水平end*/
+.wa-xend{
+  display: flex;
+  justify-content: flex-end;
+}
+/* 水平居中 */
+.wa-xcenter{
+  display:flex;
+  justify-content:center;
+}
+/* 垂直居中 */
+.wa-ycenter{
+  display:flex;
+  align-items: center;
+}
